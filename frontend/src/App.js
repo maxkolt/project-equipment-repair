@@ -12,7 +12,6 @@ import Footer from './components/Footer';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 800, once: false, offset: 100 });
-    console.log("AOS Initialized"); // Проверка в консоли
   }, []);
 
   return (
@@ -20,8 +19,8 @@ function App() {
       <Header />
       <div><Hero /></div>
       <div data-aos="fade-up" data-aos-delay="100"><Brands /></div>
-      <div data-aos="fade-up" data-aos-delay="200"><Advantages /></div>
-      <div data-aos="fade-up" data-aos-delay="300"><ContactForm /></div>
+      <div data-aos="fade-up" data-aos-delay="100"><Advantages /></div>
+      <div data-aos="fade-up" data-aos-delay="100"><ContactForm /></div>
       <div><Footer /></div>
     </div>
   );
