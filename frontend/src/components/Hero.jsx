@@ -24,9 +24,9 @@ function Hero() {
   return (
     <section id="hero" className="bg-gray-100 py-8">
       <div className="container mx-auto px-4 text-center">
-        <h5 className="text-3xl md:text-4xl md:font-bold mt-2 mb:mt-10 mb-8 mb:mb-16">
+        <h1 className="text-3xl md:text-4xl md:font-bold mt-2 mb:mt-10 mb-8 mb:mb-16">
           ПРОФЕССИОНАЛЬНЫЙ РЕМОНТ И ОБСЛУЖИВАНИЕ БЫТОВОЙ ТЕХНИКИ
-        </h5>
+        </h1>
         {/* Грид с адаптивностью */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {categories.map((cat) => (

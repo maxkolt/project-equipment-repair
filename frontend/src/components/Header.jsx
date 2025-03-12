@@ -20,7 +20,7 @@ function Header() {
           {/* Телефон */}
           <a
             href="tel:1234567890"
-            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-60 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
           >
             <img src="/icons/telephone.png" alt="Phone" className="w-6 h-6"/>
           </a>
@@ -28,7 +28,7 @@ function Header() {
           {/* Telegram */}
           <a
             href="https://t.me/yourChannel"
-            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-60 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,7 +38,7 @@ function Header() {
           {/* WhatsApp */}
           <a
             href="https://wa.me/yourNumber"
-            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-60 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +48,7 @@ function Header() {
           {/* Instagram */}
           <a
             href="https://instagram.com/yourProfile"
-            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-60 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-[0px_1px_15px_rgba(0,0,0,0.4)]"
             target="_blank"
             rel="noopener noreferrer"
           >

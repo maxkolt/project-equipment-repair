@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Можно добавить свои стили ниже */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+h1, h2, h3, h4, button, p {
+    font-family: 'Jura', sans-serif;
+    font-weight: 400; /* Regular 400 */
+}
