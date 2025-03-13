@@ -3,19 +3,19 @@ import React from 'react';
 // Пример массива категорий (используем статический импорт изображений)
 import image1 from '../assets/images/images-removebg-preview.png';
 import image2 from '../assets/images/removebg-preview.png';
-import image3 from '../assets/images/Без_названия-removebg-preview.png';
-import image4 from '../assets/images/диагностика-removebg-preview.png';
-import image5 from '../assets/images/Без_названия__1_-removebg-preview.png';
-import image6 from '../assets/images/кондиционер-removebg-preview.png';
-import image7 from '../assets/images/вытяжка-removebg-preview.png';
-import image8 from '../assets/images/кофеварка-removebg-preview.png';
-import image9 from '../assets/images/пылисос-removebg-preview.png';
-import image10 from '../assets/images/сушилка-removebg-preview.png';
-import image11 from '../assets/images/тостер-removebg-preview.png';
-import image12 from '../assets/images/установка-removebg-preview.png';
-import image13 from '../assets/images/чайник-removebg-preview.png';
-import image14 from '../assets/images/электоплита-removebg-preview.png';
-import image15 from '../assets/images/телевизор-removebg-preview.png';
+import image3 from '../assets/images/new-removebg-preview.png';
+import image4 from '../assets/images/diagnostika-removebg-preview.png';
+import image5 from '../assets/images/new1-removebg-preview.png';
+import image6 from '../assets/images/kondicioner-removebg-preview.png';
+import image7 from '../assets/images/vitejka-removebg-preview.png';
+import image8 from '../assets/images/kofevarka-removebg-preview.png';
+import image9 from '../assets/images/pilisos-removebg-preview.png';
+import image10 from '../assets/images/suchilka-removebg-preview.png';
+import image11 from '../assets/images/toster-removebg-preview.png';
+import image12 from '../assets/images/ystanovka-removebg-preview.png';
+import image13 from '../assets/images/chainik-removebg-preview.png';
+import image14 from '../assets/images/elektroplita-removebg-preview.png';
+import image15 from '../assets/images/televizor-removebg-preview.png';
 
 const categories = [
   { id: 1, title: 'Ремонт и обслуживание cтиральных машин', img: image1 },
