@@ -5,7 +5,7 @@ const connectDB = require('./config/db');
 const leadRoutes = require('./routes/leadRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 5000;
 
 // Подключение к MongoDB
 connectDB();
