@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://project-equipment-repair-production.up.railway.app';
+
 const ContactForm = () => {
   const [notificationVisible, setNotificationVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [loadingDots, setLoadingDots] = useState("");
-
 
   useEffect(() => {
     if (isLoading) {
@@ -28,8 +29,7 @@ const ContactForm = () => {
     };
 
     try {
-      // Отправка данных на сервер
-      const response = await fetch('http://localhost:5002/api/leads', {
+      const response = await fetch(`${API_BASE_URL}/api/leads`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const ContactForm = () => {
       <div className="container mx-auto text-center">
         <h3 className="text-3xl md:text-4xl md:font-semibold mt-8 mb-10">ОСТАВЬТЕ ЗАЯВКУ</h3>
 
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-gray-200 bg-opacity-30  p-6 shadow-lg rounded-lg mb-16">
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-gray-200 bg-opacity-30 p-6 shadow-lg rounded-lg mb-16">
           <input
             type="text"
             name="name"
@@ -76,7 +76,6 @@ const ContactForm = () => {
             required
           />
 
-          {/* Кнопка отправки */}
           <button
             type="submit"
             className={`bg-black bg-opacity-90 text-white py-2 px-6 rounded-full text-lg hover:bg-indigo-400 transition duration-300 w-auto mt-4 ${
@@ -88,7 +87,6 @@ const ContactForm = () => {
           </button>
         </form>
 
-        {/* Уведомление о успешной отправке */}
         {notificationVisible && (
           <div className="flex justify-center items-center mt-10">
             <div className="bg-green-400 bg-opacity-80 text-white p-6 rounded-md shadow-lg text-2xl w-80 max-w-full mx-auto">
