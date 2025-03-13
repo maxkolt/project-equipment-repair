@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Lead = require('../models/leadModel'); // Проверь правильность пути
+const Lead = require('../models/Lead'); // Проверь правильность пути
 
 // ✅ Получение всех лидов
 router.get('/', async (req, res) => {
