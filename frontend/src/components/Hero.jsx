@@ -1,38 +1,32 @@
 import React from 'react';
 
 // Пример массива категорий (используем статический импорт изображений)
-import image1 from '../assets/images/images-removebg-preview.png';
-import image2 from '../assets/images/removebg-preview.png';
-import image3 from '../assets/images/new-removebg-preview.png';
-import image4 from '../assets/images/diagnostika-removebg-preview.png';
-import image5 from '../assets/images/new1-removebg-preview.png';
-import image6 from '../assets/images/kondicioner-removebg-preview.png';
-import image7 from '../assets/images/vitejka-removebg-preview.png';
-import image8 from '../assets/images/kofevarka-removebg-preview.png';
-import image9 from '../assets/images/pilisos-removebg-preview.png';
-import image10 from '../assets/images/suchilka-removebg-preview.png';
-import image11 from '../assets/images/toster-removebg-preview.png';
-import image12 from '../assets/images/ystanovka-removebg-preview.png';
-import image13 from '../assets/images/chainik-removebg-preview.png';
-import image14 from '../assets/images/elektroplita-removebg-preview.png';
-import image15 from '../assets/images/televizor-removebg-preview.png';
+import image1 from '../assets/images/img/suhilka.jpg';
+import image2 from '../assets/images/img/posudamoika.jpg';
+import image3 from '../assets/images/img/xolodilnik.jpg';
+import image4 from '../assets/images/img/remont.jpg';
+import image5 from '../assets/images/img/duxovka.jpg';
+import image6 from '../assets/images/img/kondicionerdom.jpg';
+import image7 from '../assets/images/img/vitejka.jpg';
+import image8 from '../assets/images/img/kofevarka1.jpg';
+import image9 from '../assets/images/img/stiralnaia.40.jpg';
+import image10 from '../assets/images/img/Ustanovka.jpg';
+import image11 from '../assets/images/img/indukcionplita.jpg';
+import image12 from '../assets/images/img/boiler.jpg';
 
 const categories = [
-  { id: 1, title: 'Ремонт и обслуживание cтиральных машин', img: image1 },
-  { id: 2, title: 'Ремонт и обслуживание посудомоек', img: image2 },
-  { id: 3, title: 'Ремонт и обслуживание холодильников', img: image3 },
-  { id: 4, title: 'Диагностика поломок любых видов техники', img: image4 },
-  { id: 5, title: 'Ремонт и обслуживание духовых шкафов', img: image5 },
-  { id: 6, title: 'Ремонт и обслуживание кондиционеров', img: image6 },
-  { id: 7, title: 'Ремонт и обслуживание вытяжек', img: image7 },
-  { id: 8, title: 'Ремонт и обслуживание кофеварок', img: image8 },
-  { id: 9, title: 'Ремонт и обслуживание пылесосов', img: image9 },
-  { id: 10, title: 'Ремонт и обслуживание сушилок', img: image10 },
-  { id: 11, title: 'Ремонт и обслуживание тостеров', img: image11 },
-  { id: 12, title: 'Установка оборудования', img: image12 },
-  { id: 13, title: 'Ремонт и обслуживание электрочайников', img: image13 },
-  { id: 14, title: 'Ремонт и обслуживание электроплит', img: image14 },
-  { id: 15, title: 'Ремонт и обслуживание телевизоров', img: image15 },
+  {id: 1, title: 'Ремонт и обслуживание cтиральных машин', img: image1},
+  {id: 2, title: 'Ремонт и обслуживание посудомоек', img: image2},
+  {id: 3, title: 'Ремонт и обслуживание холодильников', img: image3},
+  {id: 4, title: 'Диагностика поломок любых видов техники', img: image4},
+  {id: 5, title: 'Ремонт и обслуживание духовых шкафов', img: image5},
+  {id: 6, title: 'Ремонт и обслуживание кондиционеров', img: image6},
+  {id: 7, title: 'Ремонт и обслуживание вытяжек', img: image7},
+  {id: 8, title: 'Ремонт и обслуживание кофеварок', img: image8},
+  {id: 9, title: 'Ремонт и обслуживание сушилок', img: image9},
+  {id: 10, title: 'Установка оборудования', img: image10},
+  {id: 11, title: 'Ремонт и обслуживание электроплит', img: image11},
+  {id: 12, title: 'Ремонт и обслуживание бойлеров', img: image12},
 ];
 
 function Hero() {
@@ -47,27 +41,26 @@ function Hero() {
           {categories.map((cat) => (
             <div
               key={cat.id}
-              className="bg-gray-50 rounded-sm shadow-lg p-4 hover:shadow-xl transition-shadow flex flex-col items-center text-center relative overflow-hidden group"
+              className="bg-gray-50 rounded-sm shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center overflow-hidden group"
             >
               {/* Изображение */}
               <img
                 src={cat.img}
                 alt={cat.title}
-                className="w-full h-48 object-contain mb-4"
+                className="w-full h-48 object-cover"
               />
 
-              {/* Фон заголовка с эффектом при наведении */}
+              {/* Плашка заголовка */}
               <div
-                className="absolute bottom-0 left-0 w-full h-1/4 bg-gray-900 opacity-80 transition-colors duration-300 group-hover:bg-indigo-600"></div>
-
-              {/* Заголовок */}
-              <h3 className="md:text-lg text-indigo-50 text-center relative z-10 p-2">
-                {cat.title}
-              </h3>
+                className="w-full bg-gray-900 opacity-80 transition-opacity duration-300 group-hover:opacity-90 flex items-center justify-center h-20 mt-0">
+                {/* Заголовок */}
+                <h3 className="md:text-lg text-indigo-50 text-center p-2.5">
+                  {cat.title}
+                </h3>
+              </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
