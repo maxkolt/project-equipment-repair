@@ -7,7 +7,7 @@ function Header() {
 
         {/* Логотип (скрываем на мобильных, показываем на больших экранах) */}
         <div className="hidden sm:flex items-center space-x-2">
-          <span className="font-bold text-indigo-400 text-3xl">TechCare</span>
+          <h1 className="font-bold text-indigo-500 text-4xl">MilesMails</h1>
         </div>
 
         {/* Надпись о скидке - по центру между логотипом и кнопками на больших экранах */}

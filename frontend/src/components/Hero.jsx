@@ -19,7 +19,7 @@ import image15 from '../assets/images/televizor-removebg-preview.png';
 
 const categories = [
   { id: 1, title: 'Ремонт и обслуживание cтиральных машин', img: image1 },
-  { id: 2, title: 'Ремонт и обслуживание посудомоечных машин', img: image2 },
+  { id: 2, title: 'Ремонт и обслуживание посудомоек', img: image2 },
   { id: 3, title: 'Ремонт и обслуживание холодильников', img: image3 },
   { id: 4, title: 'Диагностика поломок любых видов техники', img: image4 },
   { id: 5, title: 'Ремонт и обслуживание духовых шкафов', img: image5 },
@@ -43,23 +43,31 @@ function Hero() {
           ПРОФЕССИОНАЛЬНЫЙ РЕМОНТ И ОБСЛУЖИВАНИЕ БЫТОВОЙ ТЕХНИКИ
         </h1>
         {/* Грид с адаптивностью */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {categories.map((cat) => (
             <div
               key={cat.id}
-              className="bg-gray-50 rounded-lg shadow-lg p-4 hover:shadow-xl transition-shadow flex flex-col items-center text-center"
+              className="bg-gray-50 rounded-sm shadow-lg p-4 hover:shadow-xl transition-shadow flex flex-col items-center text-center relative overflow-hidden group"
             >
-              {/* Изображение с object-contain, чтобы не обрезалось */}
+              {/* Изображение */}
               <img
                 src={cat.img}
                 alt={cat.title}
                 className="w-full h-48 object-contain mb-4"
               />
+
+              {/* Фон заголовка с эффектом при наведении */}
+              <div
+                className="absolute bottom-0 left-0 w-full h-1/4 bg-gray-900 opacity-80 transition-colors duration-300 group-hover:bg-indigo-600"></div>
+
               {/* Заголовок */}
-              <h3 className="text-lg">{cat.title}</h3>
+              <h3 className="md:text-lg text-indigo-50 text-center relative z-10 p-2">
+                {cat.title}
+              </h3>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
