@@ -54,7 +54,7 @@ function Hero() {
               <div
                 className="w-full bg-gray-900 opacity-80 transition-opacity duration-300 group-hover:opacity-90 flex items-center justify-center h-20 mt-0">
                 {/* Заголовок */}
-                <h3 className="md:text-lg text-indigo-50 text-center p-2.5">
+                <h3 className="md:text-lg text-white text-center p-2.5">
                   {cat.title}
                 </h3>
               </div>
