@@ -32,7 +32,7 @@ const categories = [
 function Hero() {
   return (
     <section id="hero" className="bg-gray-100 py-8">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto md:px-4 px-1 text-center">
         <h1 className="text-3xl md:text-4xl md:font-bold mt-2 mb:mt-10 mb-8 mb:mb-16">
           ПРОФЕССИОНАЛЬНЫЙ РЕМОНТ И ОБСЛУЖИВАНИЕ БЫТОВОЙ ТЕХНИКИ
         </h1>
