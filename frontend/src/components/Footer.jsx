@@ -40,7 +40,7 @@ function Footer() {
               <h3 className="text-lg font-semibold mt-4">Для юр. лиц</h3>
               <p className="text-sm">
                 ✉️{" "}
-                <a href="mailbusiness@kvalitet.com" className="hover:text-indigo-400">
+                <a href="12345kolt@gmail.com" className="hover:text-indigo-400">
                   bness@kvalitet.comp
                 </a>
               </p>
@@ -62,7 +62,6 @@ function Footer() {
               src="https://yandex.ru/map-widget/v1/?ll=37.722479%2C55.752504&z=16&pt=37.722479,55.752504,pm2rdl"
               width="100%"
               height="200"
-              frameBorder="0"
               allowFullScreen
               className="rounded-lg shadow-lg"
             ></iframe>
@@ -98,7 +97,6 @@ function Footer() {
               src="https://yandex.ru/map-widget/v1/?ll=37.722479%2C55.752504&z=16&pt=37.722479,55.752504,pm2rdl"
               width="120%"
               height="200"
-              frameBorder="0"
               allowFullScreen
               className="rounded-lg shadow-lg"
             ></iframe>
