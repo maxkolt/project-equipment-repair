@@ -15,18 +15,18 @@ import image11 from '../assets/images/img/indukcionplita.jpg';
 import image12 from '../assets/images/img/boiler.jpg';
 
 const categories = [
-  {id: 1, title: 'Ремонт и обслуживание cтиральных машин', img: image1},
+  {id: 1, title: 'Ремонт и обслуживание электроплит', img: image11},
   {id: 2, title: 'Ремонт и обслуживание посудомоек', img: image2},
-  {id: 3, title: 'Ремонт и обслуживание холодильников', img: image3},
-  {id: 4, title: 'Диагностика поломок любых видов техники', img: image4},
-  {id: 5, title: 'Ремонт и обслуживание духовых шкафов', img: image5},
-  {id: 6, title: 'Ремонт и обслуживание кондиционеров', img: image6},
-  {id: 7, title: 'Ремонт и обслуживание вытяжек', img: image7},
-  {id: 8, title: 'Ремонт и обслуживание кофеварок', img: image8},
-  {id: 9, title: 'Ремонт и обслуживание сушилок', img: image9},
-  {id: 10, title: 'Установка оборудования', img: image10},
-  {id: 11, title: 'Ремонт и обслуживание электроплит', img: image11},
-  {id: 12, title: 'Ремонт и обслуживание бойлеров', img: image12},
+  {id: 3, title: 'Ремонт и обслуживание духовых шкафов', img: image5},
+  {id: 4, title: 'Ремонт и обслуживание вытяжек', img: image7},
+  {id: 5, title: 'Ремонт и обслуживание cтиральных машин', img: image1},
+  {id: 6, title: 'Ремонт и обслуживание кофеварок', img: image8},
+  {id: 7, title: 'Ремонт и обслуживание сушилок', img: image9},
+  {id: 8, title: 'Ремонт и обслуживание холодильников', img: image3},
+  {id: 9, title: 'Диагностика поломок любых видов техники', img: image4},
+  {id: 10, title: 'Ремонт и обслуживание бойлеров', img: image12},
+  {id: 11, title: 'Ремонт и обслуживание кондиционеров', img: image6},
+  {id: 12, title: 'Установка оборудования', img: image10},
 ];
 
 function Hero() {
