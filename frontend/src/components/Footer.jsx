@@ -134,7 +134,7 @@ function Footer() {
 
       {/* Нижний блок с копирайтом и политикой конфиденциальности */}
       <div className="container mx-auto px-4 mt-6 flex flex-col md:flex-row justify-between items-center md:items-start">
-        <p className="text-sm">&copy; {new Date().getFullYear()} TechCare. Все права защищены.</p>
+        <p className="text-sm">&copy; {new Date().getFullYear()} MilesMails. Все права защищены.</p>
         <a href="/privacy-policy" className="text-sm text-gray-200 hover:text-gray-400">
           Политика конфиденциальности
         </a>

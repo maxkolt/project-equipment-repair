@@ -78,7 +78,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className={`bg-black bg-opacity-90 text-white py-2 px-6 rounded-full text-lg hover:bg-indigo-400 transition duration-300 w-auto mt-4 ${
+            className={`bg-black bg-opacity-90 text-white py-2 px-6 rounded-full text-lg hover:bg-indigo-600 transition duration-300 w-auto mt-4 ${
               isLoading ? 'opacity-70 cursor-not-allowed' : ''
             }`}
             disabled={isLoading}
