@@ -37,7 +37,7 @@ function Hero() {
           ПРОФЕССИОНАЛЬНЫЙ РЕМОНТ И ОБСЛУЖИВАНИЕ БЫТОВОЙ ТЕХНИКИ
         </h1>
         {/* Грид с адаптивностью */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[0.3rem] md:gap-4">
           {categories.map((cat) => (
             <div
               key={cat.id}
