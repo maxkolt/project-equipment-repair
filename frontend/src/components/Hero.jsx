@@ -1,18 +1,18 @@
 import React from 'react';
 
 // Пример массива категорий (используем статический импорт изображений)
-import image1 from '../assets/images/img/suhilka.jpg';
-import image2 from '../assets/images/img/posudamoika.jpg';
-import image3 from '../assets/images/img/xolodilnik.jpg';
-import image4 from '../assets/images/img/remont.jpg';
-import image5 from '../assets/images/img/duxovka.jpg';
-import image6 from '../assets/images/img/kondicionerdom.jpg';
-import image7 from '../assets/images/img/vitejka.jpg';
-import image8 from '../assets/images/img/kofevarka1.jpg';
-import image9 from '../assets/images/img/stiralnaia.40.jpg';
-import image10 from '../assets/images/img/Ustanovka.jpg';
-import image11 from '../assets/images/img/indukcionplita.jpg';
-import image12 from '../assets/images/img/boiler.jpg';
+import image1 from '../assets/img/suhilka.jpg';
+import image2 from '../assets/img/posudamoika.jpg';
+import image3 from '../assets/img/xolodilnik.jpg';
+import image4 from '../assets/img/remont.jpg';
+import image5 from '../assets/img/duxovka.jpg';
+import image6 from '../assets/img/kondicionerdom.jpg';
+import image7 from '../assets/img/vitejka.jpg';
+import image8 from '../assets/img/kofevarka1.jpg';
+import image9 from '../assets/img/stiralnaia.40.jpg';
+import image10 from '../assets/img/Ustanovka.jpg';
+import image11 from '../assets/img/indukcionplita.jpg';
+import image12 from '../assets/img/boiler.jpg';
 
 const categories = [
   {id: 1, title: 'Ремонт и обслуживание электроплит', img: image11},
