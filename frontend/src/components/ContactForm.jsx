@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [notificationVisible, setNotificationVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [loadingDots, setLoadingDots] = useState("");
+  const [consentGiven, setConsentGiven] = useState(true); // по умолчанию галочка активна
 
   useEffect(() => {
     if (isLoading) {
@@ -20,6 +21,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!consentGiven) return;
     setIsLoading(true);
     const formData = new FormData(e.target);
 
@@ -48,6 +50,7 @@ const ContactForm = () => {
       setTimeout(() => setNotificationVisible(false), 2000);
 
       e.target.reset();
+      setConsentGiven(true); // сбросить чекбокс
     } catch (error) {
       console.error('Ошибка:', error);
     } finally {
@@ -76,12 +79,29 @@ const ContactForm = () => {
             required
           />
 
+          <label className="flex items-center mb-4 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={consentGiven}
+              onChange={() => setConsentGiven((prev) => !prev)}
+              className="hidden"
+            />
+            <div className={`w-5 h-5 mr-3 flex items-center justify-center rounded border border-gray-300 ${consentGiven ? 'bg-indigo-600' : 'bg-white'}`}>
+              {consentGiven && (
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              )}
+            </div>
+            <h2 className="text-sm text-gray-900 underline decoration-gray-400 decoration-[1px] underline-offset-2">Я даю согласие на обработку персональных данных</h2>
+          </label>
+
           <button
             type="submit"
             className={`bg-black bg-opacity-90 text-white py-2 px-6 rounded-full text-lg hover:bg-indigo-600 transition duration-300 w-auto mt-4 ${
-              isLoading ? 'opacity-70 cursor-not-allowed' : ''
+              isLoading || !consentGiven ? 'opacity-70 cursor-not-allowed' : ''
             }`}
-            disabled={isLoading}
+            disabled={isLoading || !consentGiven}
           >
             {isLoading ? `Загрузка${loadingDots}` : "Заказать мастера"}
           </button>
