@@ -63,7 +63,8 @@ const ContactForm = () => {
       <div className="container mx-auto text-center">
         <h3 className="text-3xl md:text-4xl md:font-semibold mt-8 mb-10">ОСТАВЬТЕ ЗАЯВКУ</h3>
 
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-gray-200 bg-opacity-30 p-6 shadow-lg rounded-lg mb-16">
+        <form onSubmit={handleSubmit}
+              className="max-w-lg mx-auto bg-gray-200 bg-opacity-30 p-6 shadow-lg rounded-lg mb-16">
           <input
             type="text"
             name="name"
@@ -79,22 +80,35 @@ const ContactForm = () => {
             required
           />
 
-          <label className="flex items-center mb-4 cursor-pointer">
+          <label className="flex items-start md:gap-2 gap-0 ml-1 mb-4 cursor-pointer">
             <input
               type="checkbox"
               checked={consentGiven}
               onChange={() => setConsentGiven((prev) => !prev)}
               className="hidden"
             />
-            <div className={`w-5 h-5 mr-3 flex items-center justify-center rounded border border-gray-300 ${consentGiven ? 'bg-indigo-600' : 'bg-white'}`}>
+            <div
+              className={`w-5 h-5 flex items-center justify-center rounded border border-gray-300 ${
+                consentGiven ? 'bg-indigo-600' : 'bg-white'
+              }`}
+            >
               {consentGiven && (
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/>
                 </svg>
               )}
             </div>
-            <h2 className="text-sm text-gray-900 underline decoration-gray-400 decoration-[1px] underline-offset-2">Я даю согласие на обработку персональных данных</h2>
+            <p className="text-sm md:mr-0 mr-5 text-gray-900 underline decoration-gray-400 underline-offset-2 leading-snug">
+              Я даю согласие на обработку персональных данных
+            </p>
           </label>
+
 
           <button
             type="submit"
@@ -109,7 +123,8 @@ const ContactForm = () => {
 
         {notificationVisible && (
           <div className="flex justify-center items-center mt-10">
-            <div className="bg-green-400 bg-opacity-80 text-white p-6 rounded-md shadow-lg text-2xl w-80 max-w-full mx-auto">
+            <div
+              className="bg-green-400 bg-opacity-80 text-white p-6 rounded-md shadow-lg text-2xl w-80 max-w-full mx-auto">
               Вам перезвонят!
             </div>
           </div>
