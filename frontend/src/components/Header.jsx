@@ -9,7 +9,7 @@ function Header() {
         <div className="flex flex-col sm:hidden space-y-3">
 
           {/* Скидка + Номер в одну строку */}
-          <div className="flex flex-wrap justify-center items-center text-center gap-x-2 text-gray-300 text-base font-medium">
+          <div className="flex flex-wrap justify-center items-center text-center gap-x-4 text-gray-300 text-base font-medium">
             <span>Скидка 10% при заказе с сайта!</span>
             <a
               href="tel:+74991307377"
