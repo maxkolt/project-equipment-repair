@@ -13,16 +13,16 @@ function Footer() {
               <h3 className="text-lg font-semibold mb-2">Контакты</h3>
               <p className="text-sm">
                 📞{" "}
-                <a href="tel:+74955404475" className="hover:text-indigo-400">
-                  +7 495 540 44 75
+                <a href="tel:+74991307377" className="hover:text-indigo-400">
+                  +7 499 130 73 77
                 </a>
               </p>
               <p className="text-sm">📆 Пн-Пт: с 8:00 до 22:00</p>
               <p className="text-sm">📆 Сб-Вс: с 9:00 до 22:00</p>
               <p className="text-sm mt-2">
                 ☎️{" "}
-                <a href="tel:+78007756731" className="hover:text-indigo-400">
-                  +7 800 775 67 31
+                <a href="tel:+74991307377" className="hover:text-indigo-400">
+                  +7 499 130 73 77
                 </a>
               </p>
               <p className="text-sm text-gray-400">Бесплатно по России</p>
@@ -75,16 +75,16 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-3">Контакты</h3>
             <p className="text-sm">
               📞{" "}
-              <a href="tel:+74955404475" className="hover:text-indigo-400">
-                +7 495 540 44 75
+              <a href="tel:+74991307377" className="hover:text-indigo-400">
+                +7 499 130 73 77
               </a>
             </p>
             <p className="text-sm">📆 Пн-Пт: с 8:00 до 22:00</p>
             <p className="text-sm">📆 Сб-Вс: с 9:00 до 22:00</p>
             <p className="text-sm mt-2">
               ☎️{" "}
-              <a href="tel:+78007756731" className="hover:text-indigo-400">
-                +7 800 775 67 31
+              <a href="tel:+74991307377" className="hover:text-indigo-400">
+                +7 499 130 73 77
               </a>
             </p>
             <p className="text-sm text-gray-400">Бесплатно по России</p>
@@ -120,7 +120,7 @@ function Footer() {
             </p>
             <div className="mt-4">
               <a
-                href="mailto:ceo@company.com"
+                href="mailto:12345kolt@gmail.com"
                 className="bg-indigo-600 hover:bg-indigo-400 text-white py-1 px-2 rounded-lg transition"
               >
                 Написать руководству
