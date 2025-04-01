@@ -79,15 +79,15 @@ function Footer() {
                 +7 499 130 73 77
               </a>
             </p>
-            <p className="text-sm">📆 Пн-Пт: с 8:00 до 22:00</p>
-            <p className="text-sm">📆 Сб-Вс: с 9:00 до 22:00</p>
+            <p className="text-sm text-gray-400">📆 Пн-Пт: с 8:00 до 22:00</p>
+            <p className="text-sm text-gray-400">📆 Сб-Вс: с 9:00 до 22:00</p>
             <p className="text-sm mt-2">
               ☎️{" "}
               <a href="tel:+74991307377" className="hover:text-indigo-400">
                 +7 499 130 73 77
               </a>
             </p>
-            <p className="text-sm text-gray-400">Бесплатно по России</p>
+            <p className="text-sm text-gray-300">📍 Мы работаем по Москве и Московской области</p>
           </div>
 
           {/* Карта по центру */}
@@ -107,14 +107,14 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-2">Для физических лиц</h3>
             <p className="text-sm">
               ✉️{" "}
-              <a href="mailto:shop@miele-store.ru" className="hover:text-indigo-400">
+              <a href="mailto:shop@miele-store.ru" className="text-gray-300 hover:text-indigo-400">
                 shop@miele-store.ru
               </a>
             </p>
             <h3 className="text-lg font-semibold mt-4">Для юридических лиц</h3>
             <p className="text-sm">
               ✉️{" "}
-              <a href="mailto:business@kvalitet.company" className="hover:text-indigo-400">
+              <a href="mailto:business@kvalitet.company" className="text-gray-300 hover:text-indigo-400">
                 business@kvalitet.company
               </a>
             </p>

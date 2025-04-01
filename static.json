@@ -1,0 +1,8 @@
+{
+  "root": "frontend/public",
+  "clean_urls": true,
+  "routes": {
+    "/**": "index.html"
+  },
+  "error_page": "/404.html"
+}
