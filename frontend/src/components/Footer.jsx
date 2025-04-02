@@ -13,19 +13,19 @@ function Footer() {
               <h3 className="text-lg font-semibold mb-2">Контакты</h3>
               <p className="text-sm">
                 📞{" "}
-                <a href="tel:+74991307377" className="hover:text-indigo-400">
+                <a href="tel:+74991307377" className=" text-gray-200 hover:text-indigo-400">
                   +7 499 130 73 77
                 </a>
               </p>
-              <p className="text-sm">📆 Пн-Пт: с 8:00 до 22:00</p>
-              <p className="text-sm">📆 Сб-Вс: с 9:00 до 22:00</p>
+              <p className="text-sm text-gray-400">📆 Пн-Пт: с 8:00 до 22:00</p>
+              <p className="text-sm text-gray-400">📆 Сб-Вс: с 9:00 до 22:00</p>
               <p className="text-sm mt-2">
                 ☎️{" "}
-                <a href="tel:+74991307377" className="hover:text-indigo-400">
+                <a href="tel:+74991307377" className="text-gray-200 hover:text-indigo-400">
                   +7 499 130 73 77
                 </a>
               </p>
-              <p className="text-sm text-gray-400">Бесплатно по России</p>
+              <p className="text-xs text-gray-300">📍 Мы работаем по Москве и Московской области</p>
             </div>
 
             {/* Email */}
@@ -33,21 +33,21 @@ function Footer() {
               <h3 className="text-lg font-semibold">Для физ. лиц</h3>
               <p className="text-sm">
                 ✉️{" "}
-                <a href="mailto:shop@miele-store.ru" className="hover:text-indigo-400">
+                <a href="mailto:shop@miele-store.ru" className="text-gray-400 hover:text-indigo-400">
                   shop@miele-store.ru
                 </a>
               </p>
               <h3 className="text-lg font-semibold mt-4">Для юр. лиц</h3>
               <p className="text-sm">
                 ✉️{" "}
-                <a href="mailto:shop@miele-store.ru" className="hover:text-indigo-400">
+                <a href="mailto:shop@miele-store.ru" className="text-gray-400 hover:text-indigo-400">
                   bness@kvalitet.comp
                 </a>
               </p>
-              <div className="mt-4 mb-6">
+              <div className="mt-6 mb-6">
                 <a
                   href="mailto:ceo@company.com"
-                  className="bg-indigo-600 hover:bg-indigo-400 text-white px-1 rounded-lg transition"
+                  className="bg-indigo-600 hover:bg-indigo-400 text-gray-300 p-1 rounded-lg transition"
                 >
                   Написать руководству
                 </a>
