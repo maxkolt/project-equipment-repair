@@ -37,7 +37,7 @@ function Footer() {
                   shop@miele-store.ru
                 </a>
               </p>
-              <h3 className="text-lg font-semibold mt-4">Для юр. лиц</h3>
+              <h3 className="text-lg font-semibold mt-2">Для юр. лиц</h3>
               <p className="text-sm">
                 ✉️{" "}
                 <a href="mailto:shop@miele-store.ru" className="text-gray-400 hover:text-indigo-400">
