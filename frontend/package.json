@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://storage.yandexcloud.net/repair-api-deploy",
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "aos": "^2.3.4",

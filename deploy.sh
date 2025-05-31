@@ -1,37 +1,35 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-set -e
+# Имя бакета в Yandex Object Storage
+BUCKET_NAME="repair-api-deploy"
 
-BUCKET_NAME="equipment-repair-api-deploy"
-FUNCTION_NAME="repair-api"
-ZIP_PATH="function.zip"
-MONGO_URI="mongodb+srv://12345kolt:sSrtDTKOr6klCGzc@lead.5uho2.mongodb.net/?retryWrites=true&w=majority&appName=lead"
-
+# 1) Собираем фронтенд
 echo "📦 Билдим фронтенд..."
-cd frontend
+pushd frontend >/dev/null
+npm install      # Можно убрать, если зависимости уже стоят
 npm run build
-cd ..
+popd >/dev/null
 
-echo "🗂 Копируем фронтенд в Object Storage..."
-yc storage s3 cp --recursive frontend/build/ s3://$BUCKET_NAME/
+echo "🗂 Загружаем фронтенд в Object Storage..."
+yc storage s3 cp \
+  --recursive \
+  frontend/build/ \
+  s3://"$BUCKET_NAME"/frontend/
 
-echo "🗜 Упаковываем backend..."
-cd backend
-rm -f $ZIP_PATH  # удалить старый zip если есть
-zip -r $ZIP_PATH * .env
-cd ..
+# 2) Упаковываем бэкенд в ZIP (в корне проекта появится function.zip)
+echo "🗜 Упаковываем бэкенд в function.zip..."
+pushd backend >/dev/null
+rm -f ../function.zip
+# Упаковываем ВСЁ внутри backend/, включая node_modules/ — чтобы функция сразу могла запуститься без npm install
+zip -r ../function.zip . -x "*.git*" -x "*.DS_Store"
+popd >/dev/null
 
-echo "⬆️ Загружаем архив в Object Storage..."
-yc storage s3 cp backend/$ZIP_PATH s3://$BUCKET_NAME/$ZIP_PATH
+# 3) Заливаем этот ZIP в бакет (ключ function.zip)
+echo "⬆️ Загружаем function.zip в Object Storage..."
+yc storage s3 cp \
+  function.zip \
+  s3://"$BUCKET_NAME"/function.zip
 
-echo "🚀 Обновляем Cloud Function..."
-yc serverless function version create \
-  --function-name=$FUNCTION_NAME \
-  --runtime nodejs18 \
-  --entrypoint index.handler \
-  --memory 256m \
-  --execution-timeout 10s \
-  --source-path s3://$BUCKET_NAME/$ZIP_PATH \
-  --environment MONGO_URI="$MONGO_URI"
-
-echo "✅ Готово"
+echo "✅ Функция function.zip загружена в бакет $BUCKET_NAME."
+echo "✅ Фронтенд загружен в бакет $BUCKET_NAME/frontend/"
