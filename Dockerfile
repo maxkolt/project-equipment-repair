@@ -7,16 +7,14 @@ RUN npm install
 COPY frontend .
 RUN npm run build
 
-# Этап 2: сборка backend и копирование frontend-билда
+# Этап 2: сборка backend и копирование фронта
 FROM node:18
 
 WORKDIR /app
 
-# Установка зависимостей backend
 COPY backend/package*.json ./backend/
 RUN cd backend && npm install
 
-# Копирование исходников backend и билда фронтенда
 COPY backend ./backend
 COPY --from=frontend-builder /app/frontend/build ./backend/public
 
