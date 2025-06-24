@@ -12,10 +12,10 @@ function Header() {
           <div className="flex flex-wrap justify-center items-center text-center gap-x-4 text-gray-300 text-base font-medium">
             <span>Скидка 10% при заказе с сайта!</span>
             <a
-              href="tel:+74991307377"
+              href="tel:+79255961151"
               className="text-indigo-300 mr-1 font-semibold hover:text-indigo-200 transition"
             >
-              +7&nbsp;499&nbsp;130-73-77
+              +7&nbsp;925&nbsp;596-11-51
             </a>
           </div>
 
@@ -29,10 +29,10 @@ function Header() {
               {/*<a href="tel:+74991307377" className="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">*/}
               {/*  <img src="/icons/telephone.png" alt="Phone" className="w-5 h-5" />*/}
               {/*</a>*/}
-              <a href="https://t.me/+74991307377" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
+              <a href="https://t.me/@max12kolt" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
                 <img src="/icons/telegram.png" alt="Telegram" className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/+74991307377" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
+              <a href="https://wa.me/+79255961151" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
                 <img src="/icons/whatsapp.png" alt="WhatsApp" className="w-5 h-5" />
               </a>
               <a href="https://instagram.com/yourProfile" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
@@ -53,13 +53,13 @@ function Header() {
 
           {/* Иконки */}
           <nav className="flex space-x-4">
-            <a href="tel:1234567890" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
+            <a href="tel:+79255961151" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
               <img src="/icons/telephone.png" alt="Phone" className="w-6 h-6" />
             </a>
-            <a href="https://t.me/yourChannel" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
+            <a href="https://t.me/@max12kolt" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
               <img src="/icons/telegram.png" alt="Telegram" className="w-6 h-6" />
             </a>
-            <a href="https://wa.me/yourNumber" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
+            <a href="https://wa.me/+79255961151" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">
               <img src="/icons/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
             </a>
             <a href="https://instagram.com/yourProfile" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-400 bg-opacity-25 hover:opacity-70 transition shadow-md">

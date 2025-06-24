@@ -13,7 +13,7 @@ function Footer() {
               <h3 className="text-lg font-semibold mb-2">Контакты</h3>
               <p className="text-sm">
                 📞{" "}
-                <a href="tel:+74991307377" className="hover:text-indigo-400">
+                <a href="tel:+79255961151" className="hover:text-indigo-400">
                   +7 499 130 73 77
                 </a>
               </p>
@@ -21,8 +21,8 @@ function Footer() {
               <p className="text-sm">📆 Сб-Вс: с 9:00 до 22:00</p>
               <p className="text-sm mt-2">
                 ☎️{" "}
-                <a href="tel:+74991307377" className="hover:text-indigo-400">
-                  +7 499 130 73 77
+                <a href="tel:+79255961151" className="hover:text-indigo-400">
+                  +7 925 596 11 51
                 </a>
               </p>
               <p className="text-sm text-gray-400">Бесплатно по России</p>
@@ -33,20 +33,20 @@ function Footer() {
               <h3 className="text-lg font-semibold">Для физ. лиц</h3>
               <p className="text-sm">
                 ✉️{" "}
-                <a href="mailto:shop@miele-store.ru" className="hover:text-indigo-400">
-                  shop@miele-store.ru
+                <a href="mailto:12345kolt@gmail.com" className="hover:text-indigo-400">
+                  12345kolt@gmail.com
                 </a>
               </p>
               <h3 className="text-lg font-semibold mt-4">Для юр. лиц</h3>
               <p className="text-sm">
                 ✉️{" "}
-                <a href="mailto:shop@miele-store.ru" className="hover:text-indigo-400">
-                  bness@kvalitet.comp
+                <a href="mailto:kolt12max@mail.ru" className="hover:text-indigo-400">
+                  kolt12max@mail.ru
                 </a>
               </p>
               <div className="mt-4 mb-6">
                 <a
-                  href="mailto:ceo@company.com"
+                  href="mailto:12345kolt@gmail.com"
                   className="bg-indigo-600 hover:bg-indigo-400 text-white px-1 rounded-lg transition"
                 >
                   Написать руководству
@@ -75,7 +75,7 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-3">Контакты</h3>
             <p className="text-sm">
               📞{" "}
-              <a href="tel:+74991307377" className="hover:text-indigo-400">
+              <a href="tel:+79255961151" className="hover:text-indigo-400">
                 +7 499 130 73 77
               </a>
             </p>
@@ -83,7 +83,7 @@ function Footer() {
             <p className="text-sm">📆 Сб-Вс: с 9:00 до 22:00</p>
             <p className="text-sm mt-2">
               ☎️{" "}
-              <a href="tel:+74991307377" className="hover:text-indigo-400">
+              <a href="tel:+79255961151" className="hover:text-indigo-400">
                 +7 499 130 73 77
               </a>
             </p>
@@ -107,15 +107,15 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-2">Для физических лиц</h3>
             <p className="text-sm">
               ✉️{" "}
-              <a href="mailto:shop@miele-store.ru" className="hover:text-indigo-400">
-                shop@miele-store.ru
+              <a href="mailto:kolt12max@mail.ru" className="hover:text-indigo-400">
+                kolt12max@mail.ru
               </a>
             </p>
             <h3 className="text-lg font-semibold mt-4">Для юридических лиц</h3>
             <p className="text-sm">
               ✉️{" "}
-              <a href="mailto:business@kvalitet.company" className="hover:text-indigo-400">
-                business@kvalitet.company
+              <a href="mailto:kolt12max@mail.ru" className="hover:text-indigo-400">
+                kolt12max@mail.ru
               </a>
             </p>
             <div className="mt-4">
