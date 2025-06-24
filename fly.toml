@@ -1,26 +1,28 @@
-# fly.toml app configuration file generated for equipment-app on 2025-06-24T16:57:12+03:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+# fly.toml app configuration file
+# Исправлено: имя приложения и базовая настройка
 
-app = 'equipment-app'
-primary_region = 'ams'
+app = "project-equipment-repair"
+primary_region = "ams"
 
 [build]
-  dockerfile = 'Dockerfile'
+dockerfile = "Dockerfile"
 
 [env]
-  PORT = '8080'
+PORT = "8080"
 
 [[services]]
-  protocol = 'tcp'
-  internal_port = 8080
+protocol = "tcp"
+internal_port = 8080
 
-  [[services.ports]]
-    port = 80
-    handlers = ['http']
+[[services.ports]]
+port = 80
+handlers = ["http"]
+
+[[services.ports]]
+port = 443
+handlers = ["tls", "http"]
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
+memory = "1gb"
+cpu_kind = "shared"
+cpus = 1
