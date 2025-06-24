@@ -14,7 +14,7 @@ function Footer() {
               <p className="text-sm">
                 📞{" "}
                 <a href="tel:+79255961151" className="hover:text-indigo-400">
-                  +7 499 130 73 77
+                  +7 925 596 11 51
                 </a>
               </p>
               <p className="text-sm">📆 Пн-Пт: с 8:00 до 22:00</p>
@@ -76,7 +76,7 @@ function Footer() {
             <p className="text-sm">
               📞{" "}
               <a href="tel:+79255961151" className="hover:text-indigo-400">
-                +7 499 130 73 77
+                +7 925 596 11 51
               </a>
             </p>
             <p className="text-sm">📆 Пн-Пт: с 8:00 до 22:00</p>
@@ -84,7 +84,7 @@ function Footer() {
             <p className="text-sm mt-2">
               ☎️{" "}
               <a href="tel:+79255961151" className="hover:text-indigo-400">
-                +7 499 130 73 77
+                +7 925 596 11 51
               </a>
             </p>
             <p className="text-sm text-gray-400">Бесплатно по России</p>
